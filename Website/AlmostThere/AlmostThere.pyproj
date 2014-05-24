@@ -11,7 +11,7 @@
     <InterpreterPath />
     <InterpreterArguments />
     <DjangoSettingsModule>$(MSBuildProjectName).settings</DjangoSettingsModule>
-    <WebBrowserUrl />
+    <WebBrowserUrl>Website</WebBrowserUrl>
     <WebBrowserPort>8080</WebBrowserPort>
   </PropertyGroup>
   <PropertyGroup>
@@ -43,6 +43,7 @@
     <Compile Include="AlmostThere\wsgi.py" />
     <Compile Include="populateWebsiteDatabase.py" />
     <Compile Include="updateData.py" />
+    <Compile Include="UpdateVehicleLocations.py" />
     <Compile Include="Website\models.py" />
     <Compile Include="Website\tests.py" />
     <Compile Include="Website\urls.py" />

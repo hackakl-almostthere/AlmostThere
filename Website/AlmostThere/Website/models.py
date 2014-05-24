@@ -25,3 +25,6 @@ class Trip(models.Model):
 	service_id = models.CharField(default=0, max_length=25)
 
 	trip_id = models.CharField(default=0, max_length=25)
+
+
+	direction_id = models.IntegerField(default=0)

@@ -41,6 +41,8 @@
     <Compile Include="AlmostThere\settings.py" />
     <Compile Include="AlmostThere\urls.py" />
     <Compile Include="AlmostThere\wsgi.py" />
+    <Compile Include="populateWebsiteDatabase.py" />
+    <Compile Include="updateData.py" />
     <Compile Include="Website\models.py" />
     <Compile Include="Website\tests.py" />
     <Compile Include="Website\urls.py" />
@@ -77,6 +79,8 @@
     </Interpreter>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="rebuildWebsiteDatabase.bat" />
+    <Content Include="Website\templates\base.html" />
     <Content Include="Website\templates\index.html" />
   </ItemGroup>
   <Import Project="$(VSToolsPath)\Python Tools\Microsoft.PythonTools.Django.targets" />

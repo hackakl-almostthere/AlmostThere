@@ -1,9 +1,62 @@
-<html>
-<head><title></title></head>
+{% extends 'base.html' %}
 
-<body>
+{% block TitleContent %}
+	
+	Homepage
 
-{{ content }}
+{% endblock %}
 
-</body>
-</html>
+{% block BodyContent %}
+
+  <div class="container-fluid">
+  	<div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+        	<form class="form-group">
+            	<label for="destination"><h2  title="Select your destination">GET ME TO...</h2></label>
+				<input type="search" class="form-control" id="destination" placeholder="Select your destination...">
+            </form>
+        </div>
+   </div>
+   
+   <div class="row">
+  		<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+        	<form class="form-group">
+ 			 <label for="location"><h2  title="Select your departure location...">FROM...</h2></label>
+             <input type="search" class="form-control" id="location" placeholder="Select your departure location...">
+             </form>
+   		</div>
+   </div>
+   
+   <div class="row">
+   		<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+        <h2 title="Time">BY OR AFTER (TIME)...</h2>
+  		<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+        	<form class="form-group" action="">
+            	<select name="hour">
+            			<option value="900">9.00 am</option>
+  						<option value="930">9.30 am</option>
+  						<option value="1000">10.00am</option>
+  						<option value="1030">10.30am</option>
+  						<option value="1100">11.00am</option>
+            		</select>
+            </form>
+   		</div>
+        </div>
+   </div>
+ 
+ 	<div class="row">
+    	<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+        	<h2 title="Time">ALERTS</h2>
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+        	<form class="form-group">
+            	<input type="checkbox" name="alerts" value="on">
+            </form>
+  		</div>
+     </div>
+  
+  <br/>
+  <br/>
+  </div>
+
+{% endblock %}

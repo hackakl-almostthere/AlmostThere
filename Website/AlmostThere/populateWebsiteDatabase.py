@@ -29,7 +29,7 @@ def main():
 	
 	Route.objects.bulk_create(routeList)
 
-	print(str(len(routeList)) +  ' routes')
+	print(str(len(routeList)) + ' routes')
 	
 
 	tripList = []

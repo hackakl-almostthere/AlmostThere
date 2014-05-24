@@ -2,7 +2,10 @@ from Math import Calculate_Distance_Between_Two_LatLong
 
 class User(object):
     """
-       Will hold information about the user
+       Will hold information about the user.
+
+       Please note that this iteration is using a straight line calculation - we are assuming that the distance between 
+       two points on a map will be connected by a straight line. As we progress, we would need to journey plan and refine it
     """
 
     def __init__(self, lat, long, walkingSpeed = 4):

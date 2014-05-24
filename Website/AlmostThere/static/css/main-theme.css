@@ -1,0 +1,25 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+h1{
+	color:#000;
+	text-align:center;
+}
+h2{
+	color:#000;
+	text-align:left;
+}
+.btn{
+	text-align:left;
+	color:#000;
+	font-size:9px;
+}
+.btn-xlarge {
+    padding: 18px 28px;
+    font-size: 22px;
+    line-height: normal;
+    -webkit-border-radius: 8px;
+       -moz-border-radius: 8px;
+            border-radius: 8px;
+    }
